@@ -1,15 +1,15 @@
 :root{
---Blue: #B9D0D8;
---Silver: #CACED0;
---Eggplant: #643444;
+--Yellow: #E1AD01;
+--Text: #543B3B;
+--Background: #C8C6D2;
 --Jet: #3B3A48;
 --Rose: #C5ABAB;
 }
 
 Body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: var(--Charcoal);
-    background-color: var(--Rose);
+    color: var(--Text);
+    background-color: var(--Background);
 }
 
 a {
@@ -34,6 +34,7 @@ a {
 }
 
 .navbar-title{
+    font-weight: bolder;
     font-size: 40px;
     background-color: var(--Rose);
     padding-left: 50px;
@@ -81,56 +82,40 @@ a {
     left: 46%
 }
 
-
-
-
-
-
-
-
-.about-me {
-    padding: 25px;
-    width: 100%;
-    background-color: var(--Powder-blue);
+main {
+    border-left: 10px solid var(--Text);
+    position: absolute;
+    right: 500;
     
 }
+
 .about-me h2{
-    font-size: 25px;
-    padding-bottom: 10px;
-    text-align: left;
+    position: absolute;
+    left: -300;
+    font-size: 25px
 }
 
-main{
-    display: flex;
-    flex-wrap: wrap;
-   flex-direction: row;
-}
-.row{
-    padding: 5%;
-    width: 100%;
-    border: 5px solid var(--Rose);
-    margin: 3%;
-    position: relative;
-    left: 
-}
 
-figure h2{
-    border: solid black;
-    text-align: center;
-}
-figure p{
-    border: solid black;
-}
+
+
+
+
+
+
+
+
+
+
 
 footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    font-size: 15px;
     padding: 30px;
+    text-align: center;
     width: 100%;
     color: var(--Rose);
     background-color: var(--Jet);
-    margin-top: 500px;
-}
-
-.project-placeholder{
-   display: inline;
 }
 
