@@ -1,0 +1,99 @@
+:root{
+--platinum: #D8DBE2;
+--Powder-blue: #A9BCD0;
+--Moonstone: #58A4B0;
+--Charcoal: #373F51;
+--Melon: #DAA49A;
+}
+
+Body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--Charcoal);
+    
+    background-color: var(--platinum);
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--Melon);
+    color: var(--Charcoal);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.nav-link a {
+    color: var(--Charcoal);
+}
+
+.navbar-title{
+    font-size: 24px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.nav-menu li:hover {
+    background-color: var(--Moonstone);
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+
+.nav-menu li {
+    padding: 2px 10px;
+}
+
+.about-me {
+    padding: 25px;
+    width: 100%;
+    background-color: var(--Powder-blue);
+    
+}
+.about-me h2{
+    font-size: 25px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+   flex-direction: row;
+}
+.row{
+    padding: 5%;
+    width: 100%;
+    border: 5px solid var(--Melon);
+    margin: 3%;
+    position: relative;
+    left: 
+}
+
+figure h2{
+    border: solid black;
+    text-align: center;
+}
+figure p{
+    border: solid black;
+}
+
+footer{
+    padding: 30px;
+    width: 100%;
+    background-color: var(--Melon);
+    margin-top: 500px;
+}
+
+.project-placeholder{
+   display: inline;
+}
+
