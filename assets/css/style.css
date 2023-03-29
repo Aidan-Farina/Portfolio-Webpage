@@ -1,11 +1,9 @@
 :root{
---Yellow: #E1AD01;
 --Text: #543B3B;
 --Background: #C8C6D2;
 --Jet: #3B3A48;
 --Rose: #C5ABAB;
---gap : 4vh;
---padding : 4vh;
+
 }
 
 Body {
@@ -52,7 +50,7 @@ a {
 }
 
 .nav-menu li:hover {
-    background-color: var(--Eggplant);
+    background-color: var(--Text);
     border-radius: 10px;
     transition: 0.5s ease;
 }
@@ -84,50 +82,216 @@ a {
     left: 46%
 }
 
-main {
+.about-me{
     display: flex;
     flex-wrap: wrap;
-    padding-left: 100px;
-    position: relative;
-    width: 100%;
+    padding-top: 20px;
+    align-items: center;
     
 }
 
-.about-me{
-    width: 100%;
+.about-me-header{ 
     display: flex;
-    padding-top: 20px;
-}
-
-.about-me h2{
+    flex-wrap: wrap;
     padding: 15px;
     padding-right: 30px;
-    border-right: 3px solid var(--Text);
+    width: 15%;
     font-size: 40px;
     text-align: end;
-    
 }
 
 
-.about-me p {
+.about-me-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    font-size: 22px;
+    border-left: 3px solid var(--Text);
     padding-left: 30px;
-    font-size: 20px;
-    
-    
 }
 
 .Projects{
     display: flex;
-    flex-direction: column;
-    gap: var(--gap);
-    padding: var(--padding);
+    flex-wrap: wrap;
+    padding-top: 20px;
+    align-items: start;
 }
 
-.row{ 
+.Projects-Header {
     display: flex;
-    flex-direction: row;
-    padding: 20px
+    flex-wrap: wrap;
+    padding: 15px;
+    padding-right: 30px;
+    width: 15%;
+    font-size: 40px;
+    text-align: end;
 }
+
+.Project-Content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    width: 85%;
+    font-size: 20px;
+}
+
+.Project-Main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    border-left: 3px solid var(--Text);
+}
+
+.Highlighted-Project{
+    background-image: url(/assets/images/image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid var(--Text);
+    height: 450px;
+    width: 100%;
+    margin: 1%;
+}
+
+.Project-Main h3{
+    display: inline;
+    position: absolute;
+    width: 15%;
+    background-color: var(--Text);
+    color: var(--Background);
+    padding: 25px;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.Highlighted-Project:hover{
+    transform: scale(1.02);
+    transition: .5s;
+}
+
+.Other-Projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    border-left: 3px solid var(--Text);
+    padding: 20px;
+}
+
+.Project-2 {
+    background-image: url(/assets/images/600x400.png);
+    background-size: cover;
+    border: var(--Text) 5px solid;
+    height: 225px;
+    width: 47.5%;
+    margin-bottom: 20px;
+}
+
+.Project-3 {
+    background-image: url(/assets/images/600x400.png);
+    background-size: cover;
+    border: var(--Text) 5px solid;
+    height: 225px;
+    width: 47.5%;
+    margin-bottom: 20px;
+
+}
+
+.Project-4 {
+    background-image: url(/assets/images/600x400.png);
+    background-size: cover;
+    border: var(--Text) 5px solid;
+    height: 225px;
+    width: 47.5%;
+
+}
+
+.Project-5 {
+    background-image: url(/assets/images/600x400.png);
+    background-size: cover;
+    border: var(--Text) 5px solid;
+    height: 225px;
+    width: 47.5%;
+
+}
+
+.Project-2:hover{
+    transform: scale(1.02);
+    transition: .5s;
+}
+.Project-3:hover{
+    transform: scale(1.02);
+    transition: .5s;
+}
+.Project-4:hover{
+    transform: scale(1.02);
+    transition: .5s;
+}
+.Project-5:hover{
+    transform: scale(1.02);
+    transition: .5s;
+}
+
+.Contact-Me{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    align-items: center;
+}
+
+.Contact-Me-Header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    padding-right: 30px;
+    width: 15%;
+    font-size: 40px;
+    text-align: end;
+}
+.Contact-Me-Content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    width: 85%;
+    border-left: 3px solid var(--Text);
+    padding-left: 30px;
+    gap: 1em;
+    
+}
+
+.Contact-Me-Links{
+    display: flex;
+    font-size: 24px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Contact-Me-Links li{
+    padding: 2px 10px;
+}
+
+.Contact-Me-Links li a{
+    color: var(--Text);
+}
+
+.Contact-Me-Links li a:hover{
+    background-color: var(--Rose);
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+
+
+
 
 
 
@@ -142,17 +306,12 @@ main {
 
 
 footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    
+    margin-top: 30px;
     font-size: 15px;
-    padding: 30px;
+    padding: 10px;
     text-align: center;
     width: 100%;
     color: var(--Rose);
     background-color: var(--Jet);
 }
-
-Flex-container
-
-
