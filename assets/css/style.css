@@ -68,7 +68,7 @@ a {
 /* hero */
 
 .hero{
-    background-image: url("/assets/images/429eb428828761.55d467b770f02.jpg");
+    background-image: url("../assets/images/429eb428828761.55d467b770f02.jpg");
     height: 20%;
     background-position: center;
     background-repeat: no-repeat;
