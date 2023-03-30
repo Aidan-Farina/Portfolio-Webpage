@@ -6,6 +6,8 @@
 
 }
 
+/* ^ color variables */
+
 Body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: var(--Text);
@@ -15,6 +17,8 @@ Body {
 a {
     text-decoration: none;
 }
+
+/* navigation bar */
 
 .navbar {
     display: flex;
@@ -45,7 +49,7 @@ a {
 
 .nav-menu {
     display: flex;
-    gap: 1em;
+    gap: 10px;
     font-size: 24px;
 }
 
@@ -59,6 +63,10 @@ a {
     padding: 2px 10px;
 }
 
+/* end of navigation bar */
+
+/* hero */
+
 .hero{
     background-image: url("/assets/images/429eb428828761.55d467b770f02.jpg");
     height: 20%;
@@ -68,7 +76,9 @@ a {
     position: relative;
 }
 
-.resume-button{
+/* resume button didnt like it */
+
+/* .resume-button{
     border-radius: 10%;
     border: 2px solid var(--Jet);
     padding: 5px;
@@ -80,7 +90,9 @@ a {
     position: absolute;
     top: 46%;
     left: 46%
-}
+} */
+
+/* about me */
 
 .about-me{
     display: flex;
@@ -109,6 +121,8 @@ a {
     border-left: 3px solid var(--Text);
     padding-left: 30px;
 }
+
+/* Projects  */
 
 .Projects{
     display: flex;
@@ -165,7 +179,11 @@ a {
     padding: 25px;
     text-align: center;
     font-size: 30px;
+    padding: 14px 18px;
+}
 
+.Project-Main h3 a{
+    color: var(--Background);
 }
 
 .Highlighted-Project:hover{
@@ -238,6 +256,10 @@ a {
     transition: .5s;
 }
 
+/* end of projects */
+
+/* Contact me */
+
 .Contact-Me{
     display: flex;
     flex-wrap: wrap;
@@ -290,23 +312,8 @@ a {
     transition: 0.5s ease;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* footer */
 footer{
-    
     margin-top: 30px;
     font-size: 15px;
     padding: 10px;
@@ -314,4 +321,45 @@ footer{
     width: 100%;
     color: var(--Rose);
     background-color: var(--Jet);
+}
+
+/* responsiveness */
+
+@media screen and (max-width: 1100px) {
+    .navbar {
+        display: block;
+        padding-left: 20px;
+        margin: auto;
+    }
+    .navbar-title{
+        display: flex;
+        justify-content: center;
+    }
+    .nav-link{
+        display: flex;
+        justify-content: center;
+    }
+
+    section{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Project-Content{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .Project-Main h3{
+        font-size: 15px;
+        padding: 5px 5px;
+    }
+    .Contact-Me{
+        align-items: start;
+    }
+    .about-me{
+        align-items: start;
+    }
 }
