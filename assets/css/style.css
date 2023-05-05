@@ -161,7 +161,7 @@ a {
 }
 
 .Highlighted-Project{
-    background-image: url(/assets/images/image.png);
+    background-image: url(/assets/images/anime-library2.png.png);
     background-repeat: no-repeat;
     background-size: cover;
     border: 5px solid var(--Text);
@@ -203,7 +203,7 @@ a {
 }
 
 .Project-2 {
-    background-image: url(/assets/images/600x400.png);
+    background-image: url(/assets/images/image.png);
     background-size: cover;
     border: var(--Text) 5px solid;
     height: 225px;
