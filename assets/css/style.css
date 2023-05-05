@@ -68,7 +68,7 @@ a {
 /* hero */
 
 .hero{
-    background-image: url("/assets/images/429eb428828761.55d467b770f02.jpg");
+    background-image: url("../assets/images/429eb428828761.55d467b770f02.jpg");
     height: 20%;
     background-position: center;
     background-repeat: no-repeat;
@@ -212,7 +212,7 @@ a {
 }
 
 .Project-3 {
-    background-image: url(/assets/images/600x400.png);
+    background-image: url(600x400.png);
     background-size: cover;
     border: var(--Text) 5px solid;
     height: 225px;
@@ -222,7 +222,7 @@ a {
 }
 
 .Project-4 {
-    background-image: url(/assets/images/600x400.png);
+    background-image: url(600x400.png);
     background-size: cover;
     border: var(--Text) 5px solid;
     height: 225px;
@@ -231,7 +231,7 @@ a {
 }
 
 .Project-5 {
-    background-image: url(/assets/images/600x400.png);
+    background-image: url(600x400.png);
     background-size: cover;
     border: var(--Text) 5px solid;
     height: 225px;
